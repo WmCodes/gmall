@@ -6,6 +6,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>gmall-api</module>
+        <module>gmall-common-util</module>
+        <module>gmall-service-util</module>
     </modules>
 
     <parent>

@@ -124,6 +124,11 @@ gmall-user/.mvn/
 gmall-user/mvnw
 gmall-user/mvnw.cmd
 
+*.iml
+
+.idea/
+
+
 
 
 
