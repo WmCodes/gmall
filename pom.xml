@@ -8,6 +8,9 @@
         <module>gmall-api</module>
         <module>gmall-common-util</module>
         <module>gmall-service-util</module>
+        <module>gmall-user</module>
+        <module>gmall-web-util</module>
+        <module>gmall-user-service</module>
     </modules>
 
     <parent>
@@ -156,5 +159,18 @@
 
     </dependencyManagement>
 
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

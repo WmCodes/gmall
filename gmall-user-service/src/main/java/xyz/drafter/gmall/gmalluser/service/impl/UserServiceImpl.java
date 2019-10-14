@@ -1,7 +1,7 @@
 package xyz.drafter.gmall.gmalluser.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import xyz.drafter.gmall.gmallapi.bean.UmsMember;
 import xyz.drafter.gmall.gmallapi.bean.UmsMemberReceiveAddress;
 import xyz.drafter.gmall.gmallapi.service.UserService;

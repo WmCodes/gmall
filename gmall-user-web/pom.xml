@@ -8,41 +8,16 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <groupId>xyz.drafter.gmall</groupId>
-    <artifactId>gmall-user</artifactId>
+    <artifactId>gmall-user-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gmall-user</name>
-    <description>gmall-user</description>
+    <name>gmall-user-web</name>
+    <description>gmall-user-web</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
-
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-
-        <dependency>
-            <groupId>xyz.drafter.gmall</groupId>
-            <artifactId>gmall-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
         <dependency>
             <groupId>xyz.drafter.gmall</groupId>
             <artifactId>gmall-service-util</artifactId>
@@ -51,30 +26,56 @@
 
         <dependency>
             <groupId>xyz.drafter.gmall</groupId>
-            <artifactId>gmall-web-util</artifactId>
+            <artifactId>gmall-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+
+        <dependency>
+            <groupId>xyz.drafter.gmall</groupId>
+            <artifactId>gmall-web-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>

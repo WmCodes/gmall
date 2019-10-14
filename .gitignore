@@ -124,11 +124,14 @@ gmall-user/.mvn/
 gmall-user/mvnw
 gmall-user/mvnw.cmd
 
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
+*.ipr
 
-.idea/
-
-
-
+gmall-user-service/.mvn/
+gmall-user-service/mvnw
+gmall-user-service/mvnw.cmd
 
 
